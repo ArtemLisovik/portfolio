@@ -209,8 +209,6 @@ section {
   \********************************************************************************************************/
 
 .info__container{
-    /* background: url("../assets/img/cover_bg_2.jpg") 28% 50%/90% no-repeat fixed;
-    background-position: cover; */
     height: 105vh;
     display: flex;
     align-items: center;
@@ -459,7 +457,7 @@ h2 {
 
 @media (max-width: 800px) {
     .info__logo {
-        background: url("../assets/img/cover_bg_2.jpg") 54.5%/220% no-repeat fixed;
+        background: url("../assets/img/cover_bg_2.jpg") 54.5%/220% no-repeat;
     }
 }
 /*!*************************************************************************************************************!*\
