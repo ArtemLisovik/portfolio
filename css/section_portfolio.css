@@ -1,0 +1,157 @@
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: calc(13px + 19 * (100vw / 1440));
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 50px 0;
+    display: inline-block;
+    background-image: linear-gradient(#fff, #fff);
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: 60% 2px;
+    padding-bottom: calc(13px + 19 * (100vw / 1440));
+}
+
+.object__wrapper-anim {
+    position: absolute;
+    background-color: black;
+    width: 110%;
+    height: 110%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.object__wrapper-anim._active{
+    animation: objects_reveal 1.9s cubic-bezier(.75,.01,.5,1.01);
+    animation-fill-mode: forwards;
+}
+
+
+.portfolio__examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 67px;
+    margin: 0 -15px;
+
+}
+
+@media (max-width: 750px) {
+    .portfolio__examples {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .portfolio__examples {
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-auto-rows: 65px; */
+    }
+}
+
+.portfolio__element {
+    grid-row: span 4;
+    margin: 0 15px 30px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.element__wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.element__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-out;
+    object-position: 20%;
+}
+
+.portfolio__element:hover .element__photo {
+    transform: scale(1.1);
+}
+
+.img__animation-wrapper {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 15px;
+    z-index: 10;
+    background-color: #d63447;
+}
+
+.img__animation-wrapper._anim {
+    animation: photo_reveal 2.3s cubic-bezier(.85,0,.15,1);
+}
+
+.img__animation-wrapper._anim + .element__wrapper {
+    animation: photo__opacity 2s ease-out 1s;
+    animation-fill-mode: forwards;
+}
+
+.portfolio__element:nth-child(2n+2){
+    grid-row: span 7;
+}
+
+.portfolio__element:nth-child(2n+5){
+    grid-row: span 5;
+}
+
+.portfolio__element:nth-child(3n+6){
+    grid-row: span 4;
+}
+
+.element__hover {
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    transition: 0.4s ease-out;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    transition: 0.3s ease-out;
+}
+
+.element__wrapper:hover .element__hover {
+    opacity: 0.7;
+}
+
+.element__title{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.element__descr {
+    color: silver;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    margin-bottom: 3%;
+}
+
+
+.element__wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+}
+
