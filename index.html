@@ -220,19 +220,19 @@
                     </div>
                     <div class="my-skills__counter counter">
                         <div class="counter__item">
-                            <p class="counter__level" id="99">99</p>
+                            <p class="counter__level" id="92"></p>
                             <p class="counter__name">html/css(scss, tailwind)</p>
                         </div>
                         <div class="counter__item" data-delay="1">
-                            <p class="counter__level" id="99">99</p>
+                            <p class="counter__level" id="90"></p>
                             <p class="counter__name">js/es5/es6+</p>
                         </div>
                         <div class="counter__item" data-delay="2">
-                            <p class="counter__level" id="95">95</p>
+                            <p class="counter__level" id="90"></p>
                             <p class="counter__name">React/redux</p>
                         </div>
                         <div class="counter__item" data-delay="3">
-                            <p class="counter__level" id="97">97</p>
+                            <p class="counter__level" id="92"></p>
                             <p class="counter__name">Wordpress/git/webpack</p>
                         </div>
                     </div>
@@ -250,25 +250,28 @@
                     </div>
                     <div class="contact-form__inner">
                         <div class="contact-form__form">
-                            <form action="#" method="post" enctype="multipart/form-data" class="form">
+                            <form class="form">
                                 <div class="form__wrapper">
                                     <div class="form__wrapper-name">
                                         <span class="object__wrapper-anim"></span>
-                                        <input placeholder="Name" type="text" name="name">
+                                        <input placeholder="Name" type="text" name="name" class="input__name _require">
+                                        <div class="error__text"></div>
                                     </div>
                                     <div class="form__wrapper-email">
-                                        <input placeholder="E-mail" type="text" name="email">
+                                        <input placeholder="E-mail" type="text" name="email" class="input__e-mail _require">
+                                        <div class="error__text"></div>
                                         <span class="object__wrapper-anim"></span>
                                     </div>
                                 </div>
                                 <div class="form__message">
-                                    <textarea placeholder="Write your message" name="message"></textarea>
+                                    <textarea placeholder="Write your message" name="message" class="input__text"></textarea>
+                                    <div class="error__text"></div>
                                     <span class="object__wrapper-anim"></span>
                                 </div>
                                 
                                 <div class="button">
                                     <span class="object__wrapper-anim"></span>
-                                    <button href="" class="descr__button">Send message</button>
+                                    <button type="submit" class="descr__button">Send message</button>
                                 </div>
                             </form>
                         </div>
@@ -302,38 +305,19 @@
                 <h3 class="footer__title title">Socials
                     <span class="footer__wrapper-anim footer__anim"></span>
                 </h3>
-                <!-- <ul class="footer__social social">
-                    <li class="social__item"><a href="https://www.instagram.com/trendsetter.z_/" target="_blank"
-                            class="social__link link">Instagram</a>
-                            <span class="footer__wrapper-anim footer__anim"></span>
-                        </li>
-                    <li class="social__item"><a href="https://t.me/trendsetterl" target="_blank"
-                            class="social__link link">Telegram</a>
-                            <span class="footer__wrapper-anim footer__anim"></span>
-                        </li>
-                    <li class="social__item"><a href="https://www.facebook.com/artem.lisovick" target="_blank"
-                            class="social__link link">Facebook</a>
-                            <span class="footer__wrapper-anim footer__anim"></span>
-                        </li>
-                    <li class="social__item"><a href="https://github.com/ArtemLisovik" target="_blank"
-                            class="social__link link">GitHub
-                            <span class="footer__wrapper-anim footer__anim"></span>
-                        </a>
-
-                        </li>
-                </ul> -->
                 <div class="info__socials-footer">
+                    <span class="footer__wrapper-anim footer__anim"></span>
                     <a href="https://t.me/trendsetterl" class="social__link telegram" target="_blank">
-                        <img src="./assets/img/icons/telega.svg" alt="telegram" id="first" class="socials__icon">
+                        <img src="./assets/img/icons/telega.svg" alt="telegram" class="socials__icon">
                     </a>
                     <a href="https://www.instagram.com/trendsetter.z_/" class="social__link instagram" target="_blank">
-                        <img src="./assets/img/icons/instagram.svg" alt="telegram" id="second" class="socials__icon">
+                        <img src="./assets/img/icons/instagram.svg" alt="telegram" class="socials__icon">
                     </a>
                     <a href="https://www.facebook.com/artem.lisovick" class="social__link facebook" target="_blank">
-                        <img src="./assets/img/icons/facebook.svg" alt="telegram" id="third" class="socials__icon">
+                        <img src="./assets/img/icons/facebook.svg" alt="telegram" class="socials__icon">
                     </a>
                     <a href="https://www.linkedin.com/in/artem-lisovik-511072192/" class="social__link linkedin" target="_blank">
-                        <img src="./assets/img/icons/LinkedIn.svg" alt="telegram" id="fourth" class="socials__icon">
+                        <img src="./assets/img/icons/LinkedIn.svg" alt="telegram" class="socials__icon">
                     </a>
                 </div>
                 <div class="footer__copyright">
