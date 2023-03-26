@@ -426,6 +426,7 @@ h2 {
     align-items: center;
     text-align: center;
     animation: title__anim-text 2.5s ease;
+    line-height: 1.1;
 
 }
 
